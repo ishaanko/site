@@ -32,4 +32,6 @@ const typeEffect = () => {
   }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
 typeEffect();
+});
