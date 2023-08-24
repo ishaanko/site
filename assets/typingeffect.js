@@ -1,4 +1,4 @@
-const dynamicText = document.querySelector(".home-content h3 span");
+const dynamicText = document.querySelector(".home-content span.typed");
 const words = [
   "Student",
   "Developer",
@@ -33,5 +33,5 @@ const typeEffect = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-typeEffect();
+  typeEffect();
 });
