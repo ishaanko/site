@@ -39,59 +39,63 @@ body {
   color: var(--text-color);
 }
 
-section {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-}
-
 /*
  * Page Header
  */
 
-.header {
-  position: fixed;
+header {
+  width: 100%;
   vertical-align: middle;
+  padding: 2rem 10rem;
+  background: var(--bg-color);
+}
+
+header {
+  background: var(--bg-color);
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
-  background: var(--bg-color);
+  padding: 4rem 10rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.logo {
   vertical-align: middle;
-  font-size: 2.5rem;
-  color: var(--text-color);
-  font-weight: 600;
-  cursor: default;
+  align-items: center;
 }
 
-.navbar a {
-  font-size: 1.7rem;
+header .home {
   color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+header nav {
+  vertical-align: middle;
+}
+
+header nav a {
+  color: var(--text-color);
+  font-size: 1.7rem;
   margin-left: 3rem;
   display: inline-block;
   position: relative;
 }
 
-.navbar a::after {
+header nav a::after {
+  background-color: #0087ca;
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform .3s ease-out;
 }
 
-.navbar a:hover::after {
+header nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -240,37 +244,31 @@ div.copyright {
   }
 }
 
-/*
- * Responsive Page Styles
- */
-
-@media (max-width: 700px) {
-  footer {
-    bottom: unset;
-  }
-
-  .col {
-    flex-basis: 100%;
-  }
-
-  .col:nth-child(2), .col:nth-child(3) {
-    flex-basis: 100%;
-  }
-}
-
 
 /*
  * Home Page
  */
 
- .home {
+main.home {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 90vh;
 }
 
-.home-content h3 {
+main.home h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+main.home h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+main.home h3 {
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -300,12 +298,6 @@ span.typed.stop-blinking::before {
   50% {
     opacity: 0;
   }
-}
-
-.home-content h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
-  line-height: 1.3;
 }
 
 .social-media a {

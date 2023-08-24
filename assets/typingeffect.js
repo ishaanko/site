@@ -1,12 +1,5 @@
-const dynamicText = document.querySelector(".home-content span.typed");
-const words = [
-  "Student",
-  "Developer",
-  "Video Editor",
-  "Designer",
-  "Gamer",
-  "Entrepreneur",
-];
+const dynamicText = document.querySelector("span.typed");
+const words = ["Student", "Developer", "Video Editor", "Designer", "Gamer", "Entrepreneur"];
 
 let wordIndex = 0;
 let charIndex = 0;
