@@ -1,5 +1,12 @@
 const dynamicText = document.querySelector(".home-content h3 span");
-const words = ["Student", "Developer", "Video Editor", "Gamer", "Entrepreneur"];
+const words = [
+  "Student",
+  "Developer",
+  "Video Editor",
+  "Designer",
+  "Gamer",
+  "Entrepreneur",
+];
 
 let wordIndex = 0;
 let charIndex = 0;
