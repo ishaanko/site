@@ -33,5 +33,5 @@ const typeEffect = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  typeEffect();
+  setTimeout(typeEffect, 450);
 });
