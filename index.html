@@ -1,83 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kuboids</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ishaan's Site</title>
     <script src="https://kit.fontawesome.com/6aa130ea05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="/site/assets/style.css" />
     <script src="/site/assets/typingeffect.js" defer></script>
   </head>
-
   <body>
     <header>
-      <a href="/site" class="home">Kuboids</a>
-      <nav class="navbar">
-        <a href="/site">Home</a>
-        <a href="/site/about.html">About Me</a>
-        <a href="/site/portfolio">Portfolio</a>
-        <a href="/site/blog">Blog</a>
-        <a href="#contact">Contact Me</a>
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/site">
+            <div id="logo">Kuboids</div>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="/site"> Home </a>
+            <a class="navbar-item" href="/site"> About Me </a>
+            <a class="navbar-item" href="/site"> Blog </a>
+            <a class="navbar-item" href="/site"> Portfolio </a>
+            <a class="navbar-item" href="/site"> Contact </a>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="home">
-      <div class="home-content">
-        <h3>Hello,</h3>
-        <h1>I'm Ishaan Kothari.</h1>
-        <h2>And I'm a <span class="typed"></span></h2>
-        <div class="social-media">
-          <a href="https://www.twitter.com/kuboids" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-discord"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <section class="hero is-primary is-fullheight has-background-black">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="subtitle">Hello!</p>
+          <p class="title">I'm Ishaan Kothari.</p>
+          <p class="subtitle">And I'm a <span class="typed"></span></p>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="row">
-        <div class="col">
-          <img src="/site/assets/filler.png" class="logo" />
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, eligendi molestias repellendus iure
-            laudantium harum, vitae vero, aliquam eaque fugiat officiis.
-          </p>
-        </div>
-        <div class="col">
-          <h3>
-            Links
-            <div class="underline"><span></span></div>
-          </h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>
-            Newsletter
-            <div class="underline"><span></span></div>
-          </h3>
-          <form>
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Enter your email ID!" required />
-            <button type="submit">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </form>
-          <div class="social-icons">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-discord"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+    </section>
+    <section>
+      <div class="container is-fluid py-6">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore molestias id fugiat quae aut,
+          libero earum culpa omnis explicabo delectus accusantium, numquam dignissimos repellendus voluptates odio? Qui,
+          perspiciatis ad.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore molestias id fugiat quae aut,
+          libero earum culpa omnis explicabo delectus accusantium, numquam dignissimos repellendus voluptates odio? Qui,
+          perspiciatis ad.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore molestias id fugiat quae aut,
+          libero earum culpa omnis explicabo delectus accusantium, numquam dignissimos repellendus voluptates odio? Qui,
+          perspiciatis ad.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore molestias id fugiat quae aut,
+          libero earum culpa omnis explicabo delectus accusantium, numquam dignissimos repellendus voluptates odio? Qui,
+          perspiciatis ad.
+        </p>
+      </div>
+    </section>
+    <section class="container is-fluid has-background-white-ter py-6">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore molestias id fugiat quae aut,
+        libero earum culpa omnis explicabo delectus accusantium, numquam dignissimos repellendus voluptates odio? Qui,
+        perspiciatis ad.
+      </p>
+    </section>
+    <section class="section py-4">
+      <div class="container has-text-centered pb-4">
+        <h1 class="is-size-1 has-text-black">Blog Posts</h1>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <p class="title is-4">title</p>
+                    <p class="subtitle is-6">date</p>
+                    <p class="has-text-black">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <p class="title is-4">title</p>
+                    <p class="subtitle is-6">date</p>
+                    <p class="has-text-black">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <p class="title is-4">title</p>
+                    <p class="subtitle is-6">date</p>
+                    <p class="has-text-black">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Kuboids &copy; 2023 - All Rights Reserved</p>
+      <div class="container has-text-centered pt-4">
+        <button class="button is-dark">More Posts</button>
       </div>
+    </section>
+    <footer class="footer has-background-grey-lighter">
+      <div class="content has-text-centered">
+        <a href="https://www.twitter.com/kuboids" target="_blank">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-x-twitter"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-discord"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-github"></i>
+          </span>
+        </a>
+      </div>
+      <div class="content has-text-centered is-size-6">Copyright &copy; Ishaan Kothari, 2023</div>
     </footer>
   </body>
 </html>

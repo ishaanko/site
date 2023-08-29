@@ -1,5 +1,6 @@
-# Personal Site
+# My Personal Site! https://ishaanko.github.io/site
 
-This is the GitHub Repo for my personal site! (Still in developlemt)
+---
 
-You can view the site at: https://ishaankothari.github.io/site/index.html
+This site will be used to host my portfolio, my weekly blog posts, and anything else interesting about me!
+(This site is still in development :D)

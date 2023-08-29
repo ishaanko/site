@@ -1,29 +1,35 @@
-const dynamicText = document.querySelector("span.typed");
+const typedText = document.querySelector("span.typed");
 const words = ["Student", "Developer", "Video Editor", "Designer", "Gamer", "Entrepreneur"];
 
 let wordIndex = 0;
 let charIndex = 0;
-let isDeleting = false;
+let deleting = false;
 
-const typeEffect = () => {
+function typeEffect() {
   const currentWord = words[wordIndex];
-  const currentChar = currentWord.substring(0, charIndex);
-  dynamicText.textContent = currentChar;
-  dynamicText.classList.add("stop-blinking");
+  typedText.textContent = currentWord.substring(0, charIndex);
+  typedText.classList.add("stop-blinking");
 
-  if (!isDeleting && charIndex < currentWord.length) {
+  if (!deleting && charIndex < currentWord.length) {
     charIndex++;
     setTimeout(typeEffect, 120);
-  } else if (isDeleting && charIndex > 0) {
+  } else if (deleting && charIndex > 0) {
     charIndex--;
     setTimeout(typeEffect, 55);
   } else {
-    isDeleting = !isDeleting;
-    dynamicText.classList.remove("stop-blinking");
-    wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+    deleting = !deleting;
+    typedText.classList.remove("stop-blinking");
+    wordIndex = !deleting ? (wordIndex + 1) % words.length : wordIndex;
     setTimeout(typeEffect, 1200);
   }
-};
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".navbar-burger").addEventListener("click", function () {
+    document.querySelector(".navbar-burger").classList.toggle("is-active");
+    document.querySelector(".navbar-menu").classList.toggle("is-active");
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(typeEffect, 450);
