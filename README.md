@@ -1,4 +1,4 @@
-# My Personal Site! ishaanko.github.io/site
+# My Personal Site! https://ishaanko.github.io/site
 
 ---
 
