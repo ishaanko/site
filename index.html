@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,32 +11,31 @@
   </head>
   <body>
     <header>
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/site">
+          <a class="navbar-item" href="/site/index.html">
             <div id="logo">Kuboids</div>
           </a>
-
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div class="navbar-menu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            <a class="navbar-item" href="/site"> Home </a>
-            <a class="navbar-item" href="/site"> About Me </a>
-            <a class="navbar-item" href="/site"> Blog </a>
-            <a class="navbar-item" href="/site"> Portfolio </a>
-            <a class="navbar-item" href="/site"> Contact </a>
+            <a class="navbar-item" href="/site/index.html#home"> Home </a>
+            <a class="navbar-item" href="/site/index.html#about"> About Me </a>
+            <a class="navbar-item" href="/site/posts.html"> Blog </a>
+            <a class="navbar-item" href="/site/portfolio.html"> Portfolio </a>
+            <a class="navbar-item" href="/site/index.html#contact"> Contact </a>
           </div>
         </div>
       </nav>
     </header>
     <section class="hero is-primary is-fullheight has-background-black">
+      <a name="home"></a>
       <div class="hero-body">
         <div class="container has-text-centered">
           <p class="subtitle">Hello!</p>
@@ -45,12 +44,20 @@
         </div>
       </div>
     </section>
-    <section class="container has-background-white py-6">
+    <section class="container has-background-white py-4">
+      <a name="about"></a>
       <div class="container has-text-centered pb-4">
         <h1 class="is-size-1 has-text-black">About Me</h1>
       </div>
+      <div class="container is-fluid">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum sequi
+          harum nesciunt!Dolorem id vitae adipisci animi dolore temporibus qui nihil
+          doloribus, sed similique maiores itaque tenetur quisquam voluptate.
+        </p>
+      </div>
     </section>
-    <section class="container is-fluid has-background-white-ter py-6">
+    <section class="container is-fluid has-background-white-ter py-4">
       <div class="container has-text-centered pb-4">
         <h1 class="is-size-1 has-text-black">Portfolio</h1>
       </div>
@@ -194,42 +201,43 @@
       </div>
     </section>
     <section class="container is-fluid has-background-white-ter py-6">
-        <div class="columns is-justify-content-center">
-          <div class="column is-6-tablet is-5-desktop is-4-widescreen is-3-fullh">
-            <form method="POST" action="https://herotofu.com/start" class="box p-5">
-              <label class="is-block mb-4">
-                <span class="is-block mb-2">Name</span>
-                <input
-                  required
-                  name="name"
-                  type="text"
-                  class="input"
-                />
-              </label>
-              <label class="is-block mb-4">
-                <span class="is-block mb-2">Email</span>
-                <input
-                  required
-                  name="email"
-                  type="email"
-                  class="input"                />
-              </label>
-              <label class="is-block mb-4">
-                <span class="is-block mb-2">Message</span>
-                <textarea
-                  required
-                  name="message"
-                  class="textarea"
-                  rows="3"
-                ></textarea>
-              </label>
-              <div class="container mb-4 has-text-centered">
-                <button type="submit" class="button is-dark px-4">Contact Me</button>
-              </div>
-              </div>
-            </form>
-          </div>
+      <a name="contact"></a>
+      <div class="columns is-justify-content-center">
+        <div class="column is-6-tablet is-5-desktop is-4-widescreen is-3-fullh">
+          <form method="POST" action="https://herotofu.com/start" class="box p-5">
+            <label class="is-block mb-4">
+              <span class="is-block mb-2">Name</span>
+              <input
+                required
+                name="name"
+                type="text"
+                class="input"
+              />
+            </label>
+            <label class="is-block mb-4">
+              <span class="is-block mb-2">Email</span>
+              <input
+                required
+                name="email"
+                type="email"
+                class="input"                />
+            </label>
+            <label class="is-block mb-4">
+              <span class="is-block mb-2">Message</span>
+              <textarea
+                required
+                name="message"
+                class="textarea"
+                rows="3"
+              ></textarea>
+            </label>
+            <div class="container mb-4 has-text-centered">
+              <button type="submit" class="button is-dark px-4">Contact Me</button>
+            </div>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
     <footer class="footer has-background-grey-lighter">
       <div class="content has-text-centered">
