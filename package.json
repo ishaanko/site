@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
-    "publish": "rm -rf public && npx @11ty/eleventy && cp -r public/* $1 && ls -l -R $1"
+    "publish": "npx @11ty/eleventy --output $1"
   },
   "keywords": [],
   "author": "",
