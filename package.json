@@ -4,9 +4,13 @@
   "description": "Personal site - https://ishaanko.github.io/site",
   "main": "index.js",
   "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
-
