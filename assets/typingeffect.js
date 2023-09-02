@@ -1,5 +1,12 @@
 const typedText = document.querySelector("span.typed");
-const words = ["Student", "Developer", "Video Editor", "Designer", "Gamer", "Entrepreneur"];
+const words = [
+  "Student",
+  "Developer",
+  "Video Editor",
+  "Designer",
+  "Gamer",
+  "Entrepreneur",
+];
 
 let wordIndex = 0;
 let charIndex = 0;
@@ -25,10 +32,12 @@ function typeEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".navbar-burger").addEventListener("click", function () {
-    document.querySelector(".navbar-burger").classList.toggle("is-active");
-    document.querySelector(".navbar-menu").classList.toggle("is-active");
-  });
+  document
+    .querySelector(".navbar-burger")
+    .addEventListener("click", function () {
+      document.querySelector(".navbar-burger").classList.toggle("is-active");
+      document.querySelector(".navbar-menu").classList.toggle("is-active");
+    });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
