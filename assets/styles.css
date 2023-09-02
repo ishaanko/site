@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400;1,600&display=swap");
+
+/* All Pages */
+* {
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Removes scroll bar */
+body {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+/* Typing Animation */
+
+span.typed {
+  color: green;
+}
+
+span.typed::after {
+  content: "_";
+  color: green;
+  padding-left: 2px;
+  display: inline-block;
+  animation: typing-blink 0.7s infinite;
+}
+
+span.typed.stop-blinking::after {
+  animation: none;
+}
+
+@keyframes typing-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Blog Page */

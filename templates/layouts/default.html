@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
-    <title>Site - {{ title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ishaan's Site - {{ title }}</title>
+    <script src="https://kit.fontawesome.com/6aa130ea05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="/site/assets/styles.css" />
+    {%- for s in scripts -%}
+      <script src="/site/assets/{{ s }}.js" defer></script>
+    {%- endfor -%}
   </head>
   <body>
+    <header>
+      <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/site/#home">
+            <div id="logo">Kuboids</div>
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="/site/#home"> Home </a>
+            <a class="navbar-item" href="/site/#about"> About Me </a>
+            <a class="navbar-item" href="/site/blog/"> Blog </a>
+            <a class="navbar-item" href="/site/portfolio/"> Portfolio </a>
+            <a class="navbar-item" href="/site/#contact"> Contact </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     {{ content }}
+    
+    <footer class="footer has-background-grey-lighter">
+      <div class="content has-text-centered">
+        <a href="https://www.twitter.com/kuboids" target="_blank">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-x-twitter"></i>
+          </span>
+        </a>
+        <a href="https://discord.gg/3SUBSeYuPW" target="_blank">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-discord"></i>
+          </span>
+        </a>
+        <a href="https://github.com/ishaanko" target="_blank">
+          <span class="icon has-text-grey-dark">
+            <i class="fa-brands fa-github"></i>
+          </span>
+        </a>
+      </div>
+      <div class="content has-text-centered is-size-6">
+        <p>Copyright &copy; Ishaan Kothari, 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
