@@ -1,14 +1,14 @@
-const luxon = require('luxon'),
-      yaml = require('js-yaml');
+const luxon = require("luxon"),
+  yaml = require("js-yaml");
 
-module.exports = eleventyConfig => {
+module.exports = (eleventyConfig) => {
   // Copy the assets directory when generating outputs!
-  eleventyConfig.addPassthroughCopy('assets');
-  eleventyConfig.addWatchTarget('assets');
+  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addWatchTarget("assets");
 
   // Create a 'date' filter to format dates in HTML.
-  eleventyConfig.addFilter('date', (d) => {
-    return luxon.DateTime.fromJSDate(d).toFormat('LLL dd, yyyy');
+  eleventyConfig.addFilter("date", (d) => {
+    return luxon.DateTime.fromJSDate(d).toFormat("LLL dd, yyyy");
   });
 
   // Replace the default YAML frontmatter engine to post-process the
@@ -17,29 +17,31 @@ module.exports = eleventyConfig => {
   eleventyConfig.setFrontMatterParsingOptions({
     engines: {
       yaml: {
-        parse: function(dataBlob) {
+        parse: function (dataBlob) {
           let data = yaml.load(dataBlob);
           if (data.date) {
             // Create a new Date object that is offseted based on local timezone.
             // Timezone offset in mins * 60 sec * 1000 milliseconds
-            data.date = new Date(data.date.getTime() + new Date().getTimezoneOffset() * 60 * 1000);
+            data.date = new Date(
+              data.date.getTime() + new Date().getTimezoneOffset() * 60 * 1000
+            );
           }
 
           return data;
-        }
-      }
-    }
+        },
+      },
+    },
   });
 
   return {
     dir: {
-      includes: '../templates/includes',
-      layouts: '../templates/layouts',
+      includes: "../templates/includes",
+      layouts: "../templates/layouts",
 
-      input: 'src',
-      output: 'public'
+      input: "src",
+      output: "public",
     },
-    pathPrefix: 'site',
-    templateFormats: [ 'md', 'njk', 'html' ],
+    pathPrefix: "site",
+    templateFormats: ["md", "njk", "html"],
   };
 };
