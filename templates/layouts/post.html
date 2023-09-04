@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% assign previousPost = collections.posts | getPreviousCollectionItem %}
+{% assign nextPost = collections.posts | getNextCollectionItem %}
+
+<section class="container max-width pt-6 pb-4">
+  <figure class="image is-16by9">
+    <img src="{{ image }}" alt="{{ abstract }}" />
+  </figure>
+  <div class="content title is-1 pt-4">
+    <p>{{ title }}</p>
+  </div>
+  <div class="content subtitle is-6">
+    <p>{{ date | date }}</p>
+  </div>
+  <div class="content subtitle is-6">
+    <p>
+    {%- for t in tags -%}
+      {%- if t != "posts" %}
+        <span class="tag is-info is-uppercase mr-2">{{ t }}</span>
+      {%- endif -%}
+    {%- endfor -%}
+    </p>
+  </div>
+</section>
+<section class="container max-width">
+  <div class="content is-medium">
+    {{ content }}
+  </div>
+</section>
+<div class="container max-width pb-6">
+  {%- if previousPost or nextPost -%}
+    <hr class="is-divider" />
+  {%- endif -%}
+  <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+    {%- if previousPost -%}
+      <a href="{{ previousPost.url | url }}"  title="Previous Post"
+        class="button bd-fat-button is-info is-light bd-pagination-prev">
+        <strong>Previous Post</strong>
+      </a>
+    {%- endif -%}
+    {%- if nextPost -%}
+      <a href="{{ nextPost.url | url }}"  title="Next Post"
+        class="button bd-fat-button is-info is-light bd-pagination-prev">
+        <strong>Next Post</strong>
+      </a>
+    {%- endif -%}
+  </nav>
+</div>

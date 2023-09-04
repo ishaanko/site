@@ -1,5 +1,5 @@
 const luxon = require("luxon"),
-  yaml = require("js-yaml");
+      yaml = require("js-yaml");
 
 module.exports = (eleventyConfig) => {
   // Copy the assets directory when generating outputs!
@@ -31,6 +31,18 @@ module.exports = (eleventyConfig) => {
         },
       },
     },
+  });
+
+  eleventyConfig.addCollection('recentPosts', function(collectionApi) {
+    return collectionApi.getFilteredByTag('posts').sort(function(a, b) {
+      return b.date - a.date;
+    }).slice(0, 3);
+  });
+
+  eleventyConfig.addCollection('highlightedProjects', function(collectionApi) {
+    return collectionApi.getFilteredByTag('starredProjects').sort(function(a, b) {
+      return b.date - a.date;
+    }).slice(0, 3);
   });
 
   return {
