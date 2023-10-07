@@ -1,11 +1,8 @@
 const typedText = document.querySelector("span.typed");
 const words = [
   "Student",
-  "Developer",
   "Video Editor",
-  "Designer",
-  "Gamer",
-  "Entrepreneur",
+  "Gamer"
 ];
 
 let wordIndex = 0;

@@ -22,12 +22,13 @@ body::-webkit-scrollbar {
 /* Typing Animation */
 
 span.typed {
-  color: green;
+  color: #209CEE;
+  font-weight: bold;
 }
 
 span.typed::after {
   content: "_";
-  color: green;
+  color: #209CEE;
   padding-left: 2px;
   display: inline-block;
   animation: typing-blink 0.7s infinite;
