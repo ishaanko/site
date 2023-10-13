@@ -1,9 +1,5 @@
 const typedText = document.querySelector("span.typed");
-const words = [
-  "Student",
-  "Video Editor",
-  "Gamer"
-];
+const words = ["Student", "Video Editor", "Developer", "Gamer"];
 
 let wordIndex = 0;
 let charIndex = 0;
@@ -19,7 +15,7 @@ function typeEffect() {
     setTimeout(typeEffect, 120);
   } else if (deleting && charIndex > 0) {
     charIndex--;
-    setTimeout(typeEffect, 55);
+    setTimeout(typeEffect, 60);
   } else {
     deleting = !deleting;
     typedText.classList.remove("stop-blinking");

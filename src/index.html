@@ -24,9 +24,22 @@ scripts: [ 'typing' ]
   </div>
   <div class="container max-width">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum sequi
-      harum nesciunt!Dolorem id vitae adipisci animi dolore temporibus qui nihil
-      doloribus, sed similique maiores itaque tenetur quisquam voluptate.
+      Hello there! I see you've stumbled upon my website! Well, here's a bit about me. I'm a student at Tesla STEM High
+      School with a passion for technology and creativity. I'm working to become a skilled developer and video editor.
+
+      In my free time, I love immersing myself in virtual worlds by playing games like Minecraft and Valorant. There's
+      something magical about how games transport you to different realities.
+
+      My goal for this website is to share my knowledge and chronicle my journey as I learn new skills. I plan to blog
+      weekly about my latest projects and insights. Eventually, I'll have a robust portfolio showcasing my work as a
+      freelance developer and video editor.
+
+      I believe in using technology as a creative force for good. I want to leverage my skills to build innovative
+      solutions that improve people's lives. Throughout my career, I aim to approach challenges with curiosity,
+      perseverance and a solutions-oriented mindset.
+
+      Connect with me here to follow my progress! I'm excited to cultivate a community of like-minded individuals who
+      share my drive to learn, build, and make an impact.
     </p>
   </div>
 </section>
@@ -74,24 +87,24 @@ scripts: [ 'typing' ]
   <div class="container max-width">
     <div class="columns">
       {%- for p in collections.recentPosts -%}
-        <div class="column is-one-third">
-          <div class="card" style="height: 100%">
-            <a href="{{ p.url | url }}">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="{{ p.data.image }}" />
-                </figure>
+      <div class="column is-one-third">
+        <div class="card" style="height: 100%">
+          <a href="{{ p.url | url }}">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="{{ p.data.image }}" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-4">{{ p.data.title }}</p>
+                <p class="subtitle is-6">{{ p.date | date }}</p>
+                <p class="has-text-black">{{ p.data.abstract }}</p>
               </div>
-              <div class="card-content">
-                <div class="content">
-                  <p class="title is-4">{{ p.data.title }}</p>
-                  <p class="subtitle is-6">{{ p.date | date }}</p>
-                  <p class="has-text-black">{{ p.data.abstract }}</p>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
+      </div>
       {%- endfor %}
     </div>
   </div>
@@ -105,39 +118,25 @@ scripts: [ 'typing' ]
   <a name="contact"></a>
   <div class="columns is-justify-content-center">
     <div class="column is-6-tablet is-5-desktop is-4-widescreen is-3-fullh">
-      <form method="POST" action="https://public.herotofu.com/v1/c03be630-64c5-11ee-94f4-efb6cbd494ee" accept-charset="UTF-8" class="box p-5">
+      <form method="POST" action="https://public.herotofu.com/v1/c03be630-64c5-11ee-94f4-efb6cbd494ee"
+        accept-charset="UTF-8" class="box p-5">
         <label class="is-block mb-4">
           <span class="is-block mb-2">Name</span>
-          <input
-            required
-            name="name"
-            type="text"
-            class="input"
-          />
+          <input required name="name" type="text" class="input" />
         </label>
         <label class="is-block mb-4">
           <span class="is-block mb-2">Email</span>
-          <input
-            required
-            name="email"
-            type="email"
-            class="input"                
-          />
+          <input required name="email" type="email" class="input" />
         </label>
         <label class="is-block mb-4">
           <span class="is-block mb-2">Message</span>
-          <textarea
-            required
-            name="message"
-            class="textarea"
-            rows="3"
-          ></textarea>
+          <textarea required name="message" class="textarea" rows="3"></textarea>
         </label>
         <div class="container mb-4 has-text-centered">
           <button type="submit" class="button is-dark px-4">Contact Me</button>
         </div>
-        </div>
-      </form>
     </div>
+    </form>
+  </div>
   </div>
 </section>
