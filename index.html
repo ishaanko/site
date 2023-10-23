@@ -3,18 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ishaan's Site - Home</title>
-    <script src="https://kit.fontawesome.com/6aa130ea05.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <title>ishaan's website - Home</title>
+    <script
+      src="https://kit.fontawesome.com/6aa130ea05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="/site/assets/styles.css" /><script src="/site/assets/typing.js" defer></script></head>
+  <!-- Analytics stuff -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-602E62FER0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-602E62FER0');
+  </script>
   <body>
     <header>
-      <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+      <nav
+        class="navbar is-fixed-top is-info"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div class="navbar-brand">
           <a class="navbar-item" href="/site/#home">
-            <div id="logo">Kuboids</div>
+            <div id="logo" class="is-bold">ishaan's website</div>
           </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+          >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -26,7 +50,9 @@
             <a class="navbar-item" href="/site/#home"> Home </a>
             <a class="navbar-item" href="/site/#about"> About Me </a>
             <a class="navbar-item" href="/site/blog/"> Blog </a>
+            <!--
             <a class="navbar-item" href="/site/portfolio/"> Portfolio </a>
+            -->
             <a class="navbar-item" href="/site/#contact"> Contact </a>
           </div>
         </div>
@@ -34,6 +60,7 @@
     </header>
 
     
+<!-- Hero Section -->
 <section class="hero is-primary is-fullheight has-background-black">
   <a name="home"></a>
   <div class="hero-body">
@@ -44,151 +71,69 @@
     </div>
   </div>
 </section>
-<section class="container has-background-white py-4">
+
+<!-- About Me Section -->
+<section class="container max-width has-background-white py-4">
   <a name="about"></a>
   <div class="container has-text-centered pb-4">
     <h1 class="is-size-1 has-text-black">About Me</h1>
   </div>
-  <div class="container is-fluid">
+  <div class="container max-width">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum sequi
-      harum nesciunt!Dolorem id vitae adipisci animi dolore temporibus qui nihil
-      doloribus, sed similique maiores itaque tenetur quisquam voluptate.
+      Hello there! I see you've stumbled upon my website! Well, here's a bit about me. I'm a student at Tesla STEM High
+      School with a passion for technology and creativity. I'm working to become a skilled developer and video editor.
+
+      In my free time, I love immersing myself in virtual worlds by playing games like Minecraft and Valorant. There's
+      something magical about how games transport you to different realities.
+
+      My goal for this website is to share my knowledge and chronicle my journey as I learn new skills. I plan to blog
+      weekly about my latest projects and insights. Eventually, I'll have a robust portfolio showcasing my work as a
+      freelance developer and video editor.
+
+      I believe in using technology as a creative force for good. I want to leverage my skills to build innovative
+      solutions that improve people's lives. Throughout my career, I aim to approach challenges with curiosity,
+      perseverance and a solutions-oriented mindset.
+
+      Connect with me here to follow my progress! I'm excited to cultivate a community of like-minded individuals who
+      share my drive to learn, build, and make an impact.
     </p>
   </div>
 </section>
+
+<!-- Portfolio Section -->
+<!--
 <section class="container is-fluid has-background-white-ter py-4">
   <div class="container has-text-centered pb-4">
     <h1 class="is-size-1 has-text-black">Portfolio</h1>
   </div>
   <div class="container">
     <div class="columns">
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <p class="title is-4">title of video</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  summary of video
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <p class="title is-4">title of video</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  summary of video
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <p class="title is-4">title of video</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  summary of video
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
   </div>
   <div class="container has-text-centered pt-4">
-    <button class="button is-dark">More Items</button>
+    <a href="/site/blog/" class="button bd-fat-button is-info is-light has-text-weight-bold">All Videos</a>
   </div>
 </section>
+-->
+
+<!-- Blog Section -->
 <section class="section py-4">
-  <div class="container has-text-centered pb-4">
+  <div class="container max-width has-text-centered pb-4">
     <h1 class="is-size-1 has-text-black">Blog Posts</h1>
   </div>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
+  <div class="container max-width">
+    <div class="columns"><div class="column is-one-third">
+        <div class="card" style="height: 100%">
+          <a href="/site/posts/helloworld/">
             <div class="card-image">
               <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                <img src="https://ucarecdn.com/83e71ac6-6c75-4e7c-96e9-5aae15a4b3f0/" />
               </figure>
             </div>
             <div class="card-content">
               <div class="content">
-                <p class="title is-4">title</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <p class="title is-4">title</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="card">
-          <a href="#">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <p class="title is-4">title</p>
-                <p class="subtitle is-6">date</p>
-                <p class="has-text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                </p>
+                <p class="title is-4">Hello World!</p>
+                <p class="subtitle is-6">Oct 22, 2023</p>
+                <p class="has-text-black">This is my introductory post.</p>
               </div>
             </div>
           </a>
@@ -197,51 +142,38 @@
     </div>
   </div>
   <div class="container has-text-centered p-5">
-    <button class="button is-dark">More Posts</button>
+    <a href="/site/blog/" class="button bd-fat-button is-info is-light has-text-weight-bold">More Posts</a>
   </div>
 </section>
-<section class="container is-fluid has-background-white-ter py-6">
+
+<!-- Contact Section -->
+<section class="has-background-white-ter py-6">
   <a name="contact"></a>
   <div class="columns is-justify-content-center">
     <div class="column is-6-tablet is-5-desktop is-4-widescreen is-3-fullh">
-      <form method="POST" action="https://herotofu.com/start" class="box p-5">
+      <form method="POST" action="https://public.herotofu.com/v1/c03be630-64c5-11ee-94f4-efb6cbd494ee"
+        accept-charset="UTF-8" class="box p-5">
         <label class="is-block mb-4">
           <span class="is-block mb-2">Name</span>
-          <input
-            required
-            name="name"
-            type="text"
-            class="input"
-          />
+          <input required name="name" type="text" class="input" />
         </label>
         <label class="is-block mb-4">
           <span class="is-block mb-2">Email</span>
-          <input
-            required
-            name="email"
-            type="email"
-            class="input"                
-          />
+          <input required name="email" type="email" class="input" />
         </label>
         <label class="is-block mb-4">
           <span class="is-block mb-2">Message</span>
-          <textarea
-            required
-            name="message"
-            class="textarea"
-            rows="3"
-          ></textarea>
+          <textarea required name="message" class="textarea" rows="3"></textarea>
         </label>
         <div class="container mb-4 has-text-centered">
           <button type="submit" class="button is-dark px-4">Contact Me</button>
         </div>
-        </div>
-      </form>
     </div>
+    </form>
+  </div>
   </div>
 </section>
 
-    
     <footer class="footer has-background-grey-lighter">
       <div class="content has-text-centered">
         <a href="https://www.twitter.com/kuboids" target="_blank">
@@ -249,7 +181,7 @@
             <i class="fa-brands fa-x-twitter"></i>
           </span>
         </a>
-        <a href="https://discord.gg/3SUBSeYuPW" target="_blank">
+        <a href="https://discordapp.com/users/762782226307350599" target="_blank">
           <span class="icon has-text-grey-dark">
             <i class="fa-brands fa-discord"></i>
           </span>
