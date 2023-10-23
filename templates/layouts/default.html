@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ishaan's Site - {{ title }}</title>
+    <title>ishaan's website - {{ title }}</title>
     <script
       src="https://kit.fontawesome.com/6aa130ea05.js"
       crossorigin="anonymous"
@@ -17,6 +17,15 @@
     <script src="/site/assets/{{ s }}.js" defer></script>
     {%- endfor -%}
   </head>
+  <!-- Analytics stuff -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-602E62FER0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-602E62FER0');
+  </script>
   <body>
     <header>
       <nav
@@ -26,7 +35,7 @@
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="/site/#home">
-            <div id="logo" class="is-bold">Ishaan Kothari</div>
+            <div id="logo" class="is-bold">ishaan's website</div>
           </a>
           <a
             role="button"
@@ -63,7 +72,7 @@
             <i class="fa-brands fa-x-twitter"></i>
           </span>
         </a>
-        <a href="https://discord.gg/3SUBSeYuPW" target="_blank">
+        <a href="https://discordapp.com/users/762782226307350599" target="_blank">
           <span class="icon has-text-grey-dark">
             <i class="fa-brands fa-discord"></i>
           </span>

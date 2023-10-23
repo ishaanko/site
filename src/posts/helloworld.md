@@ -1,9 +1,9 @@
 ---
-title: idk lol
-date: 2023-10-06
+title: Hello World!
+date: 2023-10-22
 abstract: This is my introductory post.
 image: https://ucarecdn.com/83e71ac6-6c75-4e7c-96e9-5aae15a4b3f0/
-tags: [ 'story', 'abc' ]
+tags: [ 'journal' ]
 ---
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
