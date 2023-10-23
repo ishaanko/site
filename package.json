@@ -4,8 +4,8 @@
   "description": "Personal site - https://ishaanko.github.io/site",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
+    "build": "mkdir -p public && rm -rf public && npx @11ty/eleventy",
+    "server": "npx @11ty/eleventy --serve",
     "publish": "npx @11ty/eleventy --output $1"
   },
   "keywords": [],
