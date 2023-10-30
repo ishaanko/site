@@ -1,5 +1,5 @@
 const typedText = document.querySelector("span.typed");
-const words = ["Student", "Video Editor", "Developer", "Gamer"];
+const words = ["Student", "Video Editor", "Developer"];
 
 let wordIndex = 0;
 let charIndex = 0;
