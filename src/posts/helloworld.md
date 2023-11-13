@@ -12,7 +12,7 @@ I'm a high school student who's slightly obsessed with all things creative and t
 
 On this website, you can look forward to:
 
-Weekly Blog Posts: I'm committed to delivering fresh content each week, whether it's a tutorial on video editing, a software development tip, or stories!
+Weekly Blog Posts: I'm committed to delivering fresh content every other week, whether it's a tutorial on video editing, a software development tip, or stories!
 
 Portfolio Showcase: Eventually, I'll write the code to showcase my portfolio for interested clients!
 
