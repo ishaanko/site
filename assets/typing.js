@@ -26,11 +26,11 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .querySelector(".navbar-burger")
-    .addEventListener("click", function () {
-      document.querySelector(".navbar-burger").classList.toggle("is-active");
-      document.querySelector(".navbar-menu").classList.toggle("is-active");
-    });
+      .querySelector(".navbar-burger")
+      .addEventListener("click", function () {
+        document.querySelector(".navbar-burger").classList.toggle("is-active");
+        document.querySelector(".navbar-menu").classList.toggle("is-active");
+      });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
